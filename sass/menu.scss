@@ -1,0 +1,242 @@
+@import "libs/responsive.scss";
+@import "variables.scss";
+
+.banner {
+    position: relative;
+}
+main{
+    background: #f2f2ff;
+    
+    h1 {
+      font-family: $fonttitle;
+      padding-top: 10px;
+      font-size: 25px;
+    }
+}
+
+.menu-en-tete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.line-menu {
+  width: 50px;
+  border: 2px solid $tertiary;
+  margin-top: 7px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.menu {
+  border-radius: 10px;
+  background: #f2f2ff;
+}
+
+.menu h1 {
+  margin-left: 10px;
+}
+
+ .card-menu {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in $card-animation-duration ease forwards;
+  
+    &:nth-child(1) {
+      animation-delay: $animation-delay * 1;
+    }
+  
+    &:nth-child(2) {
+      animation-delay: $animation-delay * 2;
+    }
+  
+    &:nth-child(3) {
+      animation-delay: $animation-delay * 3;
+    }
+  
+    &:nth-child(4) {
+      animation-delay: $animation-delay * 4;
+    }    
+    &:nth-child(5) {
+      animation-delay: $animation-delay * 5;
+    } 
+    &:nth-child(6) {
+      animation-delay: $animation-delay * 6;
+    } 
+      
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+.title-menu {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.card-menu {
+    border: 0px solid black;
+    display: flex;
+    width: 345px;
+    height: 50px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px #aaa;
+    position: relative;
+    overflow: hidden;
+    transition: padding-right 450ms ease-in-out;
+
+    &:hover .progress-bar {
+      opacity: 1;
+      transform: translate(-50px);
+    }
+    &:hover .price-menu {
+      width: 125px;
+      transition: 350ms ease-in;
+
+    }
+    &:hover .fa-circle-check {
+      transform: rotate(360deg) ;
+    }
+   
+    h2 {
+        font-weight: bold;
+    }
+    .body-menu {
+        margin-left: 10px;
+        padding: 2px;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        h2 {
+          font-size: 17px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        h3 {
+          font-size: 14px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+    }
+
+    .price-menu {
+        height: 100%;
+        width: 75px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        font-weight: bold;        
+    }
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  background-color: $tertiary;
+  width: 50px;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  padding: 20px;
+  right: -50px;
+  top: 0;
+  opacity: 0;
+  transition: transform 330ms ease-in-out;
+
+  & .fa-circle-check {
+    color: #fff;
+    transition: transform 500ms ease-in-out;
+  }
+
+
+}
+
+
+.menu-plats, .menu-desserts {
+    margin-top: 45px;
+}
+
+.btn_shop {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media #{$medium-up} {
+  body {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-banner img {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+  }
+  .bg-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+  .menu-plats, .menu-desserts {
+    margin: 0;
+  }
+
+  .menu {
+    padding: 50px;
+  }
+
+  .card-menu {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .btn_shop {
+    margin-top: 10px;
+  }
+  .menu-entrees, .menu-plats, .menu-desserts {
+    padding: 10px;
+  }
+  .menu-resp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heart-menu {
+    margin-left: 0;
+
+  }
+
+}
+
+
+// * {
+//   outline: 1px solid red;
+// }
