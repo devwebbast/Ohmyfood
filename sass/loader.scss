@@ -1,9 +1,12 @@
 .loader {
     width: 100%;
     height: 100%;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 0;
+    left: 0;
     background: -webkit-linear-gradient(180deg, #ff79da, #9356dc, #99e2d0);
     z-index: 1;
     animation: anim-end 200ms 3s forwards;

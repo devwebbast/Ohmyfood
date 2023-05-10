@@ -3,6 +3,7 @@
 @import "menu.scss";
 @import "libs/responsive.scss";
 @import "loader.scss";
+@import "cards.scss";
 
 body {
 
@@ -172,104 +173,59 @@ h1 {
     }
   }
 
-.card {
-    width: 335px;
-    border-radius: 20px;
-    box-shadow: 0px 5px 20px #a8a5a5;
-    margin: 20px auto;
-    &:hover {
-      transform: scale(1.01);
-    }
-  
 
-    a {
-      text-decoration: none;
-      color: black;
-    }
 
-    .image-card {
-        object-fit: cover;
-        height: 150px;
-        position: relative;
-        overflow: hidden;
-        border-radius: 20px 20px 0px 0px;
 
-        img {
-            width: 150%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -57%);
-        }   
-    }
-    .elm-new {
-      border: 1px solid $tertiary;
-      background-color: $tertiary;
-      width: 80px;
-      height: 25px;
-      position: absolute;
-      transform: translate(300%, -530%);
-      padding-top: 2px;
-      padding-bottom: 5px;
-      padding-right: 15px;
-      padding-left: 7px;
+//     .body-card {
+//         display: flex;
+//         padding: 10px;
+//         margin-left: 5px;
+//         justify-content: space-between;
 
-      p {
-        opacity: 0.45;
-        font-weight: $fontbold;
-      }
-    }
+//         h2 {
+//           font-weight: $fontbold;
+//           font-size: 18px;
+//         }
 
-    .body-card {
-        display: flex;
-        padding: 10px;
-        margin-left: 5px;
-        justify-content: space-between;
+//         .rating-card {
+//           font-size: 20px;
+//           cursor: pointer;
+//           width: 50px;
+//           display: flex;
+//           flex-direction: row-reverse;
+//           justify-content: flex-end;
 
-        h2 {
-          font-weight: $fontbold;
-          font-size: 18px;
-        }
+//           &:hover {
 
-        .rating-card {
-          font-size: 20px;
-          cursor: pointer;
-          width: 50px;
-          display: flex;
-          flex-direction: row-reverse;
-          justify-content: flex-end;
+//             .heart-menu-empty {
+//               transition: 1s ease-out;
+//             }
 
-          &:hover {
+//             .heart-menu-full {
+//               transform: translateX(20px) scale(0.9);
+//               transition: 1s ease-in-out;
 
-            .heart-menu-empty {
-              transition: 1s ease-out;
-            }
+//             }
 
-            .heart-menu-full {
-              transform: translateX(20px) scale(0.9);
-              transition: 1s ease-in-out;
+//           }
 
-            }
+//           .heart-menu-full {
+//             transform: translateX(20px) scale(0);
+//             background: $gradient;
+//             -webkit-background-clip: text;
+//             background-clip: text;
+//             color: transparent;
+//           }
+//         }
+//     } 
 
-          }
+//     .info-card {
+//       display: flex;
+//       flex-direction: column;
+//       width: 100%;
+//     }
 
-          .heart-menu-full {
-            transform: translateX(20px) scale(0);
-            background: $gradient;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-          }
-        }
-    } 
-
-    .info-card {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-
-  }
+//   }
 
 .footer {
     background-color: $backgroundfooter;
