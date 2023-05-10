@@ -113,3 +113,11 @@
     background: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     background-size: cover;
 }
+
+
+// DESKTOP
+@media #{$large}{
+    .card {
+      width: 23%;
+    }
+  }

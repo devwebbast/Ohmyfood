@@ -227,48 +227,6 @@ main h1 {
   padding-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .img-banner img {
-    object-fit: cover;
-    height: 400px;
-    width: 100%;
-  }
-  .bg-menu {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 50px;
-  }
-  .menu-plats, .menu-desserts {
-    margin: 0;
-  }
-  .menu {
-    padding: 50px;
-  }
-  .card-menu {
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .btn_shop {
-    margin-top: 10px;
-  }
-  .menu-entrees, .menu-plats, .menu-desserts {
-    padding: 10px;
-  }
-  .menu-resp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .heart-menu {
-    margin-left: 0;
-  }
-}
 .loader {
   width: 100%;
   height: 100%;
@@ -411,6 +369,11 @@ main h1 {
   background-size: cover;
 }
 
+@media screen and (min-width: 1025px) {
+  .card {
+    width: 23%;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -513,7 +476,7 @@ h1 {
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 350px;
+  width: 300px;
   height: 50px;
   margin-top: 10px;
   border-radius: 15px;
@@ -610,34 +573,6 @@ button:hover i {
 .contact {
   text-decoration: none;
   color: white;
-}
-
-@media screen and (min-width: 768px) {
-  .restaurant {
-    width: auto;
-  }
-  .cards, ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer-text {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-@media screen and (min-width: 1020px) {
-  .restaurant {
-    width: 100%;
-  }
-  .cards {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .card {
-    margin: 10px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
