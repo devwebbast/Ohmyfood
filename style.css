@@ -349,26 +349,35 @@ main h1 {
 .bg-header-card1 {
   background: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .bg-header-card2 {
   background: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .bg-header-card3 {
   background: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .bg-header-card4 {
   background: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 @media screen and (min-width: 1025px) {
   .card {
     width: 23%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: 35%;
   }
 }
 body {
@@ -498,22 +507,11 @@ h1 {
   margin-left: 10px;
 }
 
-.fa-mobile-screen-button {
-  margin-right: 11px;
+.fa-mobile-screen-button, .fa-list-ul, .fa-store {
   color: grey;
 }
-.fa-mobile-screen-button:hover {
+.fa-mobile-screen-button:hover, .fa-list-ul:hover, .fa-store:hover {
   color: #9356DC;
-}
-
-.fa-list-ul {
-  margin-right: 23px;
-  color: grey;
-}
-
-.fa-store {
-  margin-right: 17px;
-  color: grey;
 }
 
 .btn-functioning-text {
@@ -570,6 +568,14 @@ button:hover i {
 .contact {
   text-decoration: none;
   color: white;
+}
+
+@media screen and (min-width: 1025px) {
+  .list-functioning {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -136,20 +136,11 @@ h1 {
 .icon-functioning-txt {
   margin-left: 10px;
 }
-  .fa-mobile-screen-button {
-    margin-right: 11px;
+  .fa-mobile-screen-button, .fa-list-ul, .fa-store  {
     color: grey;
     &:hover {
       color: $primary;
     }
-  }
-  .fa-list-ul {
-    margin-right: 23px;
-    color: grey;
-  }
-  .fa-store {
-    margin-right: 17px;
-    color: grey;
   }
 
 .btn-functioning-text {
@@ -208,6 +199,16 @@ button:hover{
     text-decoration: none;
     color: white;
   }
+
+
+// Responsive DESKTOP
+@media #{$large}{
+  .list-functioning {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 
 
 
