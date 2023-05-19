@@ -1,19 +1,22 @@
-$card-animation-duration: 0.5s;
-$animation-delay: 0.2s;
-$text-max-width : 50px;
-$tertiary: #99E2D0;
+/*Fontstyle*/
 $fonttitle: 'Shrikhand';
-$animation-duration: 1s;
-$animation-timing-function: ease-in-out;
+$fontprimary: 'Roboto';
+$fontbold: bold;
+
+/*Colors*/
+$tertiary: #99E2D0;
 $primary: #9356DC;
 $secondary: #FF79DA;
 $backgroundfooter: #515151;
 $backhroundpage: #f2f2f2;
-$fonttitle: 'Shrikhand';
-$fontprimary: 'Roboto';
-$fontbold: bold;
 
 
 /*Dégradés */
 $gradient: linear-gradient($primary, $secondary);
 $btn-style: linear-gradient(to bottom right, $secondary, $primary);
+
+/*Animations délais*/
+$card-animation-duration: 0.6s;
+$animation-delay: 0.3s;
+$animation-duration: 1s;
+$animation-timing-function: ease-in-out;

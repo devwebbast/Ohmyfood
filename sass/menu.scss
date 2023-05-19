@@ -1,23 +1,28 @@
 @import "libs/responsive.scss";
+@import "keyframes.scss";
 @import "variables.scss";
 
-.banner {
-  height: 250px;
-  width: 100%;
-  background: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") no-repeat center center;
-  background-size: cover;
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 6%;
+  padding: 20px;
 }
-.img-banner{
-  height: 200px;
+.fa-arrow-left {
+  margin-left: 1rem;
 }
 main{
-    background: #f2f2ff;
+    background: $backhroundpage;
     
     h1 {
       font-family: $fonttitle;
       padding-top: 10px;
       font-size: 25px;
     }
+}
+
+.menu-entrees, .menu-plats, .menu-desserts {
+  width: 80%;
 }
 
 .menu-en-tete {
@@ -41,10 +46,10 @@ main{
 .menu {
   border-radius: 10px;
   background: #f2f2ff;
-}
 
-.menu h1 {
-  margin-left: 10px;
+  h1 {
+    margin-left: 10px;
+  }
 }
 
 .bg-menu {
@@ -53,7 +58,8 @@ main{
   align-items: center;
 }
 
- .card-menu {
+.card-menu {
+    width: 100%;
     opacity: 0;
     transform: translateY(20px);
     animation: fade-in $card-animation-duration ease forwards;
@@ -80,18 +86,9 @@ main{
       animation-delay: $animation-delay * 6;
     } 
       
-  }
+}
 
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+
 
 
 .title-menu {
@@ -104,17 +101,15 @@ main{
 .card-menu {
     border: 0px solid black;
     display: flex;
-    width: 345px;
     height: 50px;
     padding: 5px;
     margin-top: 10px;
-    margin-left: 10px;
     cursor: pointer;
     border-radius: 15px;
     box-shadow: 4px 4px 6px #aaa;
     position: relative;
     overflow: hidden;
-    transition: padding-right 450ms ease-in-out;
+    transition: padding-right 450ms $animation-timing-function;
 
     &:hover .progress-bar {
       opacity: 1;
@@ -178,16 +173,15 @@ main{
   right: -50px;
   top: 0;
   opacity: 0;
-  transition: transform 330ms ease-in-out;
+  transition: transform 330ms $animation-timing-function;
 
   & .fa-circle-check {
     color: #fff;
-    transition: transform 500ms ease-in-out;
+    transition: transform 500ms $animation-timing-function;
   }
 
 
 }
-
 
 .menu-plats, .menu-desserts {
     margin-top: 45px;
@@ -199,3 +193,21 @@ main{
     padding-bottom: 30px;
 }
 
+// Responsive TABLETTE
+@media #{$large}{
+  .menu-entrees, .menu-plats, .menu-desserts {
+    width: 90%;
+  }
+  .card-menu {
+    width: 100%;
+  }
+}
+// Responsive TABLETTE
+@media #{$medium}{
+  .menu-entrees, .menu-plats, .menu-desserts {
+    width: 70%;
+  }
+  .card-menu {
+    width: 100%;
+  }
+}
